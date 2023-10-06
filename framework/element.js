@@ -14,8 +14,8 @@ const createReducer = (args) => (acc, currentString, index) => {
 
   return {
     ...acc,
-    template: acc.template + currentString + (currentArg || "")
-  }
+    template: acc.template + currentString + (currentArg || ""),
+  };
 };
 
 const createElement =
