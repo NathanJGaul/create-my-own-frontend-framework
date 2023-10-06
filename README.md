@@ -11,21 +11,19 @@ This project is a minimalist frontend framework inspired by [mfrachet's front-en
 
 ## Getting Started
 
-### Prerequisites
-
-Ensure that Node.js is installed on your machine. If not, download and install it from [nodejs.org](https://nodejs.org/).
-
 ### Installation
 
 1. Clone the repository:
+
 ```sh
 git clone https://github.com/NathanJGaul/create-my-own-frontend-framework.git
 cd create-my-own-frontend-framework
 ```
 
 2. Install the dependencies
+
 ```sh
-npm install
+yarn install
 ```
 
 ## Usage Example
@@ -33,24 +31,24 @@ npm install
 Create a component, manage its state, and render it to the DOM:
 
 ```js
-import { createComponent, init } from './framework';
-import { div } from './framework/element';
-import { onClick } from './framework/event';
+import { createComponent, init } from "./framework";
+import { div } from "./framework/element";
+import { onClick } from "./framework/event";
 
 const methods = {
   changeName: (state, name) => ({ ...state, name }),
 };
 
-const initialState = { name: 'World' };
+const initialState = { name: "World" };
 
 const template = ({ name, methods }) =>
-  div`${onClick(() => methods.changeName('Universe'))} Hello, ${name}!`;
+  div`${onClick(() => methods.changeName("Universe"))} Hello, ${name}!`;
 
 const MyComponent = createComponent({ template, methods, initialState });
 
-init('#app', MyComponent);
-
+init("#app", MyComponent);
 ```
 
 ## Acknowledgments
+
 A special thanks to [mfrachet](https://github.com/mfrachet) for providing the inspirational [tutorial](https://mfrachet.github.io/create-frontend-framework/) on creating a frontend framework.
