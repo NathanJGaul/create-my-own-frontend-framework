@@ -171,6 +171,11 @@ rollup@^3.27.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
+snabbdom@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/snabbdom/-/snabbdom-3.5.1.tgz#25f80ef15b194baea703d9d5441892e369de18e1"
+  integrity sha512-wHMNIOjkm/YNE5EM3RCbr/+DVgPg6AqQAX1eOxO46zYNvCXjKP5Y865tqQj3EXnaMBjkxmQA5jFuDpDK/dbfiA==
+
 source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
